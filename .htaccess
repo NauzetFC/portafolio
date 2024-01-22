@@ -1,0 +1,9 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://nauzetfc.github.io/portafolio/[nc]
+RewriteRule ^(.*)$ http://www.https://nauzetfc.github.io/portafolio//$1 [r=301,nc]
+
+//Custom 404 errors
+ErrorDocument 404 404.html
+ 
